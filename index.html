@@ -3,60 +3,192 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Responsive Navbar</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="index.js">
-
+  <title>ChapterWise</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-  <nav class="navbar">
-    <a href="#" class="logo">MyWebsite</a>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">ChapterWise</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="5 must reads books for students in 2026.html">Article </a></li>
+        <li><a href="#english">English Books</a></li>
+        <li><a href="#categories">Category</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </header>
 
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Category</a></li>
-      <li><a href="#">Hindi Books</a></li>
-      <li><a href="#">English Books</a></li>
-      <li><a href="#">About Us </a></li>
-    </ul>
-
-    <div class="menu-toggle" id="menuToggle">
-      <span></span>
-      <span></span>
-      <span></span>
+  <!-- Landing Page -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Discover Knowledge with ChapterWise</h1>
+      <p>Your one-stop destination for the best books every student should read.</p>
+      <a href="#new-books" class="btn">Explore Books</a>
     </div>
-  </nav>
-
-  <!-- Start page 1  -->
-  <section class="landing">
-    
-    <!-- Left Side Content -->
-    <div class="landing-content">
-      <h1>
-        Learn <span>Chapter by Chapter</span>,  
-        Not Page by Page
-      </h1>
-
-      <p>
-        ChapterWise helps you master Hindi and English books with
-        structured chapters, smart categorization, and focused learning
-        designed for real understanding — not just reading.
-      </p>
-
-      <a href="#">Start Learning Now</a>
-    </div>
-
-    <!-- Right Side Image -->
-    <div class="landing-image">
-      <img src="https://via.placeholder.com/600x400" alt="Learning Illustration">
-    </div>
-
   </section>
 
-  <!-- End page 1  -->
+  <div class="page-container">
+
+  <div class="img-article">
+    <img src="images/final img.png" alt="">
+  </div>
+
+  <h1>5 Must-Read Books for Students in 2026</h1>
+
+    <div class="book-section">
+        <div class="book-image">
+            <img src="images/the alchemist book.png" alt="Book Cover">
+        </div>
+        <div class="book-details">
+            <h2 class="book-title"> 1.The Alchemist </h2>
+            <h3 class="book-author"> <b> Author : </b> Paulo Coelhor </h3>
+            <h3 class="book-genre"> <b> Genre: </b> Quest / Adventure Fiction </h3>
+            <h3 class="book-description">
+              <b>  Description : </b> The Alchemist, published in 1988 by Brazilian author Paulo Coelho, is one of the most influential books of the modern era. Originally written in Portuguese, it has been translated into over 80 languages and has sold millions of copies worldwide. The novel is a philosophical allegory that follows the journey of a young shepherd and explores the universal quest for one's life purpose.
+            </h3>
+
+            <h3 class="book-reason">
+              <b>  Why You Should Read It : </b> Reading The Alchemist is important because it acts as a helpful guide for anyone looking for their purpose in life. Unlike most adventure stories, this book uses a simple tale to explain the idea of a "Personal Legend"—the belief that everyone has a special dream they are meant to achieve.
+
+The main reason to read this book is that it encourages you to trust your gut feelings. It helps you get past the fear of making mistakes, which is often what stops people from growing. The story shows that the hard times we face are not just bad luck; they are actually lessons that help us get ready for our future success.
+
+By following the story of Santiago, a young shepherd, you learn about "Maktub," a word that means "it is written." This teaches us that while fate plays a role, we must still work hard and keep going. Ultimately, you should read this book because it shares a hopeful message: when you really want something and work toward it, the world helps you make it happen. It reminds us that the lessons we learn while traveling toward our goals are just as valuable as the goals themselves.
+            </h3>
+        </div>
+    </div>
+
+    
+    <div class="book-section">
+        <div class="book-image">
+            <img src="images/why i am an atheist book image.png" alt="Book Cover">
+        </div>
+        <div class="book-details">
+            <h2 class="book-title"> 2. Why I Am an Atheist</h2>
+            <h3 class="book-author"> <b> Author : </b> Bhagat Singh Ji  </h3>
+            <h3 class="book-genre"> <b> Genre: </b> Philosophical Memoirs/Political Essays/Non-Fiction</h3>
+            <h3 class="book-description">
+              <b>  Description : </b> Why I Am an Atheist is a powerful and famous essay written by the legendary Indian freedom fighter Bhagat Singh in 1930. He wrote this piece while he was in Lahore Central Jail, shortly before he was executed by the British government. In this writing, Bhagat Singh explains his personal journey from being a believer to becoming an atheist, using logic and reason to support his views.
+            </h3>
+
+            <h3 class="book-reason">
+              <b>  Why You Should Read It : </b> The book is not just a rejection of religion; it is a call for human reason and critical thinking. Bhagat Singh traces his journey from a childhood of religious upbringing to his time as a revolutionary, where his study of philosophy and history led him to embrace atheism.
+
+He argues that for any person to progress, they must be a "critic" of their own beliefs and the beliefs of their ancestors. He famously states that any man who stands for progress must challenge every item of old faith. Throughout the text, he tackles the "Problem of Evil," asking why a supposedly kind and all-powerful God would allow poverty, exploitation, and the suffering of millions under colonial rule.
+            </h3>
+        </div>
+    </div>
 
 
+    <div class="book-section">
+        <div class="book-image">
+            <img src="images/Sapiens book.png" alt="Book Cover">
+        </div>
+        <div class="book-details">
+            <h2 class="book-title"> 3. Sapiens: A Brief History of Humankind</h2>
+            <h3 class="book-author"> <b> Author : </b> Yuval Noah Harari. </h3>
+            <h3 class="book-genre"> <b> Genre: </b> Non-Fiction / History / Anthropology </h3>
+            <h3 class="book-description">
+              <b>  Description : </b> Sapiens is a world-famous non-fiction book that explores the entire history of the human species. Instead of just listing dates and kings, Yuval Noah Harari looks at how Homo sapiens (modern humans) rose from being ordinary animals to becoming the rulers of the planet. The book is divided into four main parts, each focusing on a major turning point in our history.
+            </h3>
+
+            <h3 class="book-reason">
+              <b>  Why You Should Read It : </b> Reading Sapiens is important because it changes how you see the world around you. It helps you understand that many things we think are "natural"—like money, nations, and human rights—are actually shared stories that we created to live together in large groups. The book's main value is that it makes you think about the big picture of where we came from and where we are going as a species.
+
+By reading this book, you will learn how humans became so powerful. It teaches you that our greatest strength is not our physical size or speed, but our ability to cooperate in large numbers based on common beliefs. It is a fascinating read for anyone who wants to understand why human society works the way it does. Ultimately, it encourages you to ask deep questions about what makes us happy and what the future might look like for humankind.
+            </h3>
+        </div>
+    </div>
+
+
+    
+    <div class="book-section">
+        <div class="book-image">
+            <img src="images/The 7 Habits of Highly Effective People book.png" alt="Book Cover">
+        </div>
+        <div class="book-details">
+            <h2 class="book-title"> 4. The 7 Habits of Highly Effective People </h2>
+            <h3 class="book-author"> <b> Author : </b> Stephen R. Covey. </h3>
+            <h3 class="book-genre"> <b> Genre: </b> Self-Help / Personal Development / Leadership </h3>
+            <h3 class="book-description">
+              <b>  Description : </b> The 7 Habits of Highly Effective People is one of the most famous self-help books ever written. First published in 1989, it has helped millions of people improve their personal and professional lives. Unlike books that offer quick "hacks," Stephen Covey focuses on changing your character and your deepest beliefs to achieve long-term success.
+            </h3>
+
+            <h3 class="book-reason">
+              <b>  Why You Should Read It : </b> Reading this book is important because it provides a timeless map for living a balanced and successful life. Its primary value is helping you move away from reacting to things that happen to you and moving toward taking control of your future. It teaches you how to build strong relationships and how to be more productive without losing your peace of mind.
+
+By reading the 7 Habits, you will learn how to align your daily actions with your deepest values. It is a great book for anyone who feels overwhelmed by work or disconnected from their goals. Ultimately, it encourages you to become a person of high character who leads by example. It reminds us that true effectiveness comes from being a good person, working well with others, and constantly taking care of our own well-being.
+            </h3>
+        </div>
+    </div>
+
+    
+    <div class="book-section">
+        <div class="book-image">
+            <img src="images/The Courage to Be Disliked book.png" alt="Book Cover">
+        </div>
+        <div class="book-details">
+            <h2 class="book-title"> 5. The Courage to Be Disliked </h2>
+            <h3 class="book-author"> <b> Author : </b> Ichiro Kishimi and Fumitake Koga </h3>
+            <h3 class="book-genre"> <b> Genre: </b> Psychology / Philosophy / Self-Help </h3>
+            <h3 class="book-description">
+              <b>  Description : </b> The Courage to Be Disliked is a world-famous book based on the ideas of Alfred Adler, one of the giants of 20th-century psychology. The book is written as a conversation between a philosopher and a frustrated young man. Through their debate, the book explains how we can let go of the past and find true happiness by changing how we think about ourselves and others.
+            </h3>
+
+            <h3 class="book-reason">
+              <b>  Why You Should Read It : </b> Reading this book is important because it gives you a sense of total freedom. Its main value is teaching you how to stop living your life to meet the expectations of other people. It helps you realize that you are not living to satisfy others, and others are not living to satisfy you.
+
+By reading this book, you will learn how to focus on the present moment. It teaches you that you don't need to be "special" or "perfect" to be happy; you just need to be yourself. It is a great read for anyone who feels stuck in the past or stressed by social pressure. Ultimately, it encourages you to take full responsibility for your own happiness and gives you the "courage" to live a life that is true to you, regardless of what others think.
+            </h3>
+        </div>
+    </div>
+
+
+
+
+  <footer class="site-footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h3>ChapterWise</h3>
+      <p>
+        ChapterWise helps students discover the most valuable books across
+        categories to build knowledge beyond classrooms.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#new-books">New Books</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-links">
+      <h4>Book Categories</h4>
+      <ul>
+        <li><a href="#">Philosophy</a></li>
+        <li><a href="#">Fiction</a></li>
+        <li><a href="#">Non-Fiction</a></li>
+        <li><a href="#">Historical</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 ChapterWise. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
 </body>
 </html>

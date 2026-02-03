@@ -1,0 +1,226 @@
+:root {
+  --primary: #1e3a8a;
+  --secondary: #facc15;
+  --light: #fbef76;
+  --dark: #020617;
+}
+
+/* ===================== RESET ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* ===================== NAVBAR ===================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 5vw;
+  background: var(--primary);
+  color: #ffffff;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* Mobile Navbar */
+@media (max-width: 48em) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--primary);
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 1.5rem 0;
+    z-index: 10;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* ===================== PAGE CONTAINER ===================== */
+.page-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* ===================== ARTICLE IMAGE ===================== */
+.img-article {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3vh;
+}
+
+.img-article img {
+  width: 90vw;
+  height: auto;
+  max-height: 80vh;
+  border-radius: 0.4rem;
+}
+
+/* ===================== HEADINGS ===================== */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 5vh 0;
+}
+
+/* ===================== CONTENT SECTIONS ===================== */
+.book-section {
+  display: flex;
+  gap: 2rem;
+  background: #ffffff;
+  margin: 5vh auto 2rem;
+  padding: 1.6rem;
+  border-radius: 1rem;
+}
+
+.book-details {
+  flex: 1;
+}
+
+.book-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.book-description,
+.book-reason {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+/* Tablet */
+@media (max-width: 64em) {
+  .book-section {
+    flex-direction: column;
+  }
+}
+
+/* Mobile */
+@media (max-width: 40em) {
+  .page-container {
+    max-width: 95%;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .book-title {
+    font-size: 1.4rem;
+  }
+
+  .book-description,
+  .book-reason {
+    font-size: 1rem;
+  }
+}
+
+/* ===================== FOOTER ===================== */
+.site-footer {
+  background: var(--primary);
+  color: var(--light);
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 3rem;
+  padding: 4rem 6vw;
+}
+
+.footer-brand h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.footer-brand p {
+  max-width: 36ch;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+.footer-links h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #e5e7eb;
+}
+
+.footer-links a:hover {
+  color: var(--secondary);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 1.4rem 6vw;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom p {
+  font-size: 0.95rem;
+}
+
+/* Footer Mobile */
+@media (max-width: 48em) {
+  .footer-container {
+    padding: 3rem 5vw;
+    gap: 2.5rem;
+  }
+
+  .footer-brand p {
+    max-width: 100%;
+  }
+}

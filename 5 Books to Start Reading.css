@@ -1,0 +1,228 @@
+:root {
+  --primary: #1e3a8a;
+  --secondary: #facc15;
+  --light: #fbef76;
+  --dark: #020617;
+  --gray-light: #e5e7eb;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.7;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 5vw;
+  background: var(--primary);
+  color: white;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* MOBILE NAV */
+@media (max-width: 48em) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--primary);
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 1.5rem 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* PAGE */
+.page-container {
+  max-width: 90%;
+  margin: auto;
+  padding: 2.5rem 0;
+}
+
+/* HERO IMAGE */
+.img-article {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4vh;
+}
+
+.img-article img {
+  width: 100%;
+  max-width: 100%;
+  height: 80vh;
+  margin-top: -2vh;
+  border-radius: 0.4rem;
+}
+
+/* HEADING */
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 5vh 0;
+}
+
+/* BOOK SECTION */
+.book-section {
+  display: flex;
+  gap: 2rem;
+  background: white;
+  padding: 1.8rem;
+  margin-bottom: 2.5rem;
+  border-radius: 1rem;
+}
+
+.book-image {
+  flex: 0 0 30%;
+}
+
+.book-image img {
+  width: 100%;
+  border-radius: 0.75rem;
+}
+
+.book-title {
+  font-size: 1.9rem;
+  margin-bottom: 0.6rem;
+}
+
+.book-author,
+.book-genre,
+.book-description,
+.book-reason {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 64em) {
+  .book-section {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 40em) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .book-title {
+    font-size: 1.4rem;
+  }
+}
+
+/* ===================== FOOTER ===================== */
+.site-footer {
+  background: var(--primary);
+  color: var(--light);
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 3rem;
+  padding: 4rem 6vw;
+}
+
+.footer-brand h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.footer-brand p {
+  max-width: 36ch;
+  font-size: 1rem;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+.footer-links h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 1rem;
+}
+
+.footer-links a:hover {
+  color: var(--secondary);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 1.4rem 6vw;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom p {
+  font-size: 0.95rem;
+  color: #e5e7eb;
+}
+
+/* ===================== MOBILE OPTIMIZATION ===================== */
+@media (max-width: 48em) {
+  .footer-container {
+    padding: 3rem 5vw;
+    gap: 2.5rem;
+  }
+
+  .footer-brand p {
+    max-width: 100%;
+  }
+
+  .footer-bottom {
+    font-size: 0.9rem;
+  }
+}

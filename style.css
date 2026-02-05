@@ -176,6 +176,11 @@ body {
   margin: 1rem auto 2rem;
 }
 
+.contact-section{
+  background: var(--light);
+  color: var(--dark);
+}
+
 /* ================= FOOTER ================= */
 .site-footer {
   background: var(--primary);

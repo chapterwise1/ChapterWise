@@ -27,12 +27,12 @@ body {
   align-items: center;
   padding: 1.2rem 5vw;
   background: var(--primary);
-  color: #ffffff;
+  color: var(--white);
   position: relative;
 }
 
 .logo {
-  font-size: 1.6rem;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
   font-weight: 700;
 }
 
@@ -44,7 +44,7 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--white);
   font-size: 1rem;
   position: relative;
 }
@@ -54,9 +54,9 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -0.25rem;
+  bottom: -0.3rem;
   width: 0;
-  height: 0.125rem;
+  height: 0.15rem;
   background: var(--secondary);
   transition: width 0.3s ease;
 }
@@ -71,8 +71,9 @@ body {
   cursor: pointer;
   background: none;
   border: none;
-  color: #ffffff;
+  color: var(--white);
 }
+
 /* ================= HERO ================= */
 .hero {
   display: grid;
@@ -84,7 +85,7 @@ body {
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 4vw, 3rem);
   color: var(--primary);
   margin-bottom: 1.5rem;
 }
@@ -96,10 +97,10 @@ body {
 }
 
 .hero-image img {
-  width: 120%;
+  width: 100%;
   max-width: 38rem;
+  height: auto;
   display: block;
-  margin-top: -15vh;
 }
 
 /* ================= BUTTON ================= */
@@ -111,22 +112,11 @@ body {
   color: var(--dark);
   text-decoration: none;
   font-weight: 600;
+  transition: background-color 0.25s ease;
 }
 
-.cta-btn:hover{
+.cta-btn:hover {
   background-color: rgb(243, 243, 15);
-}
-
-
-.cta-btn.secondary {
-  background: var(--secondary);
-  color: var(--dark);
-}
-
-
-.cta-btn.secondary:hover{
-  background: var(--secondary);
- background-color: rgb(243, 243, 15);
 }
 
 /* ================= FEATURES ================= */
@@ -136,7 +126,7 @@ body {
 }
 
 .features h2 {
-  font-size: 2.2rem;
+  font-size: clamp(1.8rem, 3vw, 2.2rem);
   margin-bottom: 3rem;
 }
 
@@ -154,13 +144,13 @@ body {
 
 /* ================= CATEGORIES ================= */
 .categories {
-  padding: 4rem 11vw;
+  padding: 4rem 8vw;
   text-align: center;
 }
 
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(17rem, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
   gap: 2rem;
   margin-top: 2.5rem;
 }
@@ -169,7 +159,7 @@ body {
   background: var(--primary);
   color: var(--white);
   padding: 1.6rem;
-  border-radius:0.5rem;
+  border-radius: 0.6rem;
   font-weight: 600;
 }
 
@@ -184,11 +174,6 @@ body {
 .cta-section p {
   max-width: 44ch;
   margin: 1rem auto 2rem;
-}
-
-.contact-section{
-  background-color: var(--light);
-  color: var(--dark);
 }
 
 /* ================= FOOTER ================= */
@@ -232,24 +217,18 @@ body {
 .footer-bottom {
   text-align: center;
   padding: 1.4rem;
-  border-top: 0.1rem solid rgba(255,255,255,0.2);
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
 }
 
 /* ================= TABLET ================= */
 @media (max-width: 64em) {
-  .hero-content h1 {
-    font-size: 2.4rem;
+  .hero {
+    gap: 3rem;
   }
 }
 
 /* ================= MOBILE ================= */
 @media (max-width: 40em) {
-
-  /* NAVBAR */
- .navbar {
-    flex-wrap: wrap;
-    padding: 1rem 5vw;
-  }
 
   .menu-toggle {
     display: block;
@@ -260,54 +239,36 @@ body {
     top: 100%;
     left: 0;
     width: 100%;
-
     flex-direction: column;
     align-items: center;
     gap: 1.25rem;
-
     padding: 1.5rem 0;
     background: var(--primary);
-
     max-height: 0;
     opacity: 0;
     overflow: hidden;
     transform: translateY(-0.5rem);
-
-    transition:
-      max-height 0.4s ease,
-      opacity 0.25s ease,
-      transform 0.3s ease;
-
-    z-index: 10;
+    transition: max-height 0.4s ease, opacity 0.25s ease, transform 0.3s ease;
   }
 
   .nav-links.active {
-    max-height: 40vh;
+    max-height: 50vh;
     opacity: 1;
     transform: translateY(0);
   }
-  /* HERO */
+
   .hero {
     padding: 3.5rem 6vw;
+    text-align: center;
   }
 
-  .hero-content h1 {
-    font-size: 2.1rem;
+  .hero-content p {
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  /* FOOTER */
   .footer-container {
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 2.5rem;
-    padding: 3rem 6vw;
-  }
-
-  .footer-brand p {
-    margin: 0 auto;
-  }
-
-  .footer-bottom {
-    font-size: 0.9rem;
   }
 }
